@@ -8,7 +8,7 @@ status:
 browser-compat: api.FileReaderSync.readAsBinaryString
 ---
 
-{{APIRef("File API")}}{{deprecated_header}} {{AvailableInWorkers}}
+{{APIRef("File API")}}{{deprecated_header}} {{AvailableInWorkers("worker_except_service")}}
 
 > **Note:** This method is deprecated in favor of {{DOMxRef("FileReaderSync.readAsArrayBuffer","readAsArrayBuffer()")}}.
 
@@ -17,8 +17,7 @@ The **`readAsBinaryString()`** method of the {{DOMxRef("FileReaderSync")}} inter
 ## Syntax
 
 ```js-nolint
-readAsBinaryString(File)
-readAsBinaryString(Blob)
+readAsBinaryString(blob)
 ```
 
 ### Parameters
